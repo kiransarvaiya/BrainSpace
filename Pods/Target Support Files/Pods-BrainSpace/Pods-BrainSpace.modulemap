@@ -1,0 +1,6 @@
+framework module Pods_BrainSpace {
+  umbrella header "Pods-BrainSpace-umbrella.h"
+
+  export *
+  module * { export * }
+}

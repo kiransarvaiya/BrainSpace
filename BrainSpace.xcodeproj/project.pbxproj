@@ -7,48 +7,83 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0A974E9D2B693D2F00A99181 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A974E9C2B693D2F00A99181 /* AppDelegate.swift */; };
-		0A974E9F2B693D2F00A99181 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A974E9E2B693D2F00A99181 /* SceneDelegate.swift */; };
-		0A974EA12B693D2F00A99181 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A974EA02B693D2F00A99181 /* ViewController.swift */; };
+		0A6D3D5B2B6A50C50098A8EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6D3D392B6A50C50098A8EE /* AppDelegate.swift */; };
+		0A6D3D5C2B6A50C50098A8EE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6D3D3A2B6A50C50098A8EE /* SceneDelegate.swift */; };
+		0A6D3D872B6A516D0098A8EE /* EndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6D3D762B6A516D0098A8EE /* EndPoints.swift */; };
+		0A6D3D882B6A516D0098A8EE /* CustomTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6D3D772B6A516D0098A8EE /* CustomTypes.swift */; };
+		0A6D3D892B6A516D0098A8EE /* BackendConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6D3D782B6A516D0098A8EE /* BackendConfiguration.swift */; };
+		0A6D3D8A2B6A516D0098A8EE /* APIEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6D3D792B6A516D0098A8EE /* APIEndpoints.swift */; };
+		0A6D3D8B2B6A516D0098A8EE /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6D3D7B2B6A516D0098A8EE /* Service.swift */; };
+		0A6D3D8C2B6A516D0098A8EE /* BackendManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6D3D7C2B6A516D0098A8EE /* BackendManager.swift */; };
+		0A6D3D8D2B6A516D0098A8EE /* APIRequestConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6D3D7D2B6A516D0098A8EE /* APIRequestConvertible.swift */; };
+		0A886AB92B6A53F9000843D2 /* PostsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A886AB82B6A53F9000843D2 /* PostsResponse.swift */; };
+		0A886AD42B6A5CD0000843D2 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A886AC72B6A5CD0000843D2 /* HomeInteractor.swift */; };
+		0A886AD52B6A5CD0000843D2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A886AC82B6A5CD0000843D2 /* HomeViewController.swift */; };
+		0A886AD62B6A5CD0000843D2 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A886AC92B6A5CD0000843D2 /* HomeRouter.swift */; };
+		0A886AD72B6A5CD0000843D2 /* HomeWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A886ACA2B6A5CD0000843D2 /* HomeWorker.swift */; };
+		0A886AD82B6A5CD0000843D2 /* HomeModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A886ACB2B6A5CD0000843D2 /* HomeModels.swift */; };
+		0A886AD92B6A5CD0000843D2 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A886ACC2B6A5CD0000843D2 /* HomePresenter.swift */; };
+		0A886ADA2B6A5CD0000843D2 /* PostsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A886ACE2B6A5CD0000843D2 /* PostsInteractor.swift */; };
+		0A886ADB2B6A5CD0000843D2 /* PostsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A886ACF2B6A5CD0000843D2 /* PostsModels.swift */; };
+		0A886ADC2B6A5CD0000843D2 /* PostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A886AD02B6A5CD0000843D2 /* PostsViewController.swift */; };
+		0A886ADD2B6A5CD0000843D2 /* PostsWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A886AD12B6A5CD0000843D2 /* PostsWorker.swift */; };
+		0A886ADE2B6A5CD0000843D2 /* PostsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A886AD22B6A5CD0000843D2 /* PostsPresenter.swift */; };
+		0A886ADF2B6A5CD0000843D2 /* PostsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A886AD32B6A5CD0000843D2 /* PostsRouter.swift */; };
+		0A886AE42B6A7874000843D2 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A886AE32B6A7874000843D2 /* UIViewControllerExtensions.swift */; };
+		0A886AEC2B6A7D34000843D2 /* PostsListTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A886AEA2B6A7D34000843D2 /* PostsListTableCell.xib */; };
+		0A886AED2B6A7D34000843D2 /* PostsListTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A886AEB2B6A7D34000843D2 /* PostsListTableCell.swift */; };
+		0A886AF12B6A810F000843D2 /* PostsCommentTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A886AEF2B6A810F000843D2 /* PostsCommentTableCell.swift */; };
+		0A886AF22B6A810F000843D2 /* PostsCommentTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A886AF02B6A810F000843D2 /* PostsCommentTableCell.xib */; };
 		0A974EA42B693D2F00A99181 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A974EA22B693D2F00A99181 /* Main.storyboard */; };
 		0A974EA62B693D3000A99181 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A974EA52B693D3000A99181 /* Assets.xcassets */; };
 		0A974EA92B693D3000A99181 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A974EA72B693D3000A99181 /* LaunchScreen.storyboard */; };
-		0A974EB42B693D3000A99181 /* BrainSpaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A974EB32B693D3000A99181 /* BrainSpaceTests.swift */; };
-		0A974EBE2B693D3000A99181 /* BrainSpaceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A974EBD2B693D3000A99181 /* BrainSpaceUITests.swift */; };
-		0A974EC02B693D3100A99181 /* BrainSpaceUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A974EBF2B693D3000A99181 /* BrainSpaceUITestsLaunchTests.swift */; };
+		AA6D91C2F7DC51B7A6776A40 /* Pods_BrainSpace.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E7C9B15F3989F458605CC21 /* Pods_BrainSpace.framework */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		0A974EB02B693D3000A99181 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0A974E912B693D2F00A99181 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0A974E982B693D2F00A99181;
-			remoteInfo = BrainSpace;
-		};
-		0A974EBA2B693D3000A99181 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0A974E912B693D2F00A99181 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0A974E982B693D2F00A99181;
-			remoteInfo = BrainSpace;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
+		0A6D3D392B6A50C50098A8EE /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0A6D3D3A2B6A50C50098A8EE /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		0A6D3D762B6A516D0098A8EE /* EndPoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndPoints.swift; sourceTree = "<group>"; };
+		0A6D3D772B6A516D0098A8EE /* CustomTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTypes.swift; sourceTree = "<group>"; };
+		0A6D3D782B6A516D0098A8EE /* BackendConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackendConfiguration.swift; sourceTree = "<group>"; };
+		0A6D3D792B6A516D0098A8EE /* APIEndpoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIEndpoints.swift; sourceTree = "<group>"; };
+		0A6D3D7B2B6A516D0098A8EE /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		0A6D3D7C2B6A516D0098A8EE /* BackendManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackendManager.swift; sourceTree = "<group>"; };
+		0A6D3D7D2B6A516D0098A8EE /* APIRequestConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequestConvertible.swift; sourceTree = "<group>"; };
+		0A886AB82B6A53F9000843D2 /* PostsResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsResponse.swift; sourceTree = "<group>"; };
+		0A886AC72B6A5CD0000843D2 /* HomeInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		0A886AC82B6A5CD0000843D2 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		0A886AC92B6A5CD0000843D2 /* HomeRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		0A886ACA2B6A5CD0000843D2 /* HomeWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeWorker.swift; sourceTree = "<group>"; };
+		0A886ACB2B6A5CD0000843D2 /* HomeModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeModels.swift; sourceTree = "<group>"; };
+		0A886ACC2B6A5CD0000843D2 /* HomePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		0A886ACE2B6A5CD0000843D2 /* PostsInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsInteractor.swift; sourceTree = "<group>"; };
+		0A886ACF2B6A5CD0000843D2 /* PostsModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsModels.swift; sourceTree = "<group>"; };
+		0A886AD02B6A5CD0000843D2 /* PostsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsViewController.swift; sourceTree = "<group>"; };
+		0A886AD12B6A5CD0000843D2 /* PostsWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsWorker.swift; sourceTree = "<group>"; };
+		0A886AD22B6A5CD0000843D2 /* PostsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsPresenter.swift; sourceTree = "<group>"; };
+		0A886AD32B6A5CD0000843D2 /* PostsRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsRouter.swift; sourceTree = "<group>"; };
+		0A886AE32B6A7874000843D2 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
+		0A886AEA2B6A7D34000843D2 /* PostsListTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PostsListTableCell.xib; sourceTree = "<group>"; };
+		0A886AEB2B6A7D34000843D2 /* PostsListTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsListTableCell.swift; sourceTree = "<group>"; };
+		0A886AEF2B6A810F000843D2 /* PostsCommentTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsCommentTableCell.swift; sourceTree = "<group>"; };
+		0A886AF02B6A810F000843D2 /* PostsCommentTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostsCommentTableCell.xib; sourceTree = "<group>"; };
 		0A974E992B693D2F00A99181 /* BrainSpace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrainSpace.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0A974E9C2B693D2F00A99181 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0A974E9E2B693D2F00A99181 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0A974EA02B693D2F00A99181 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0A974EA32B693D2F00A99181 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0A974EA52B693D3000A99181 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A974EA82B693D3000A99181 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A974EAA2B693D3000A99181 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0A974EAF2B693D3000A99181 /* BrainSpaceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrainSpaceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0A974EB32B693D3000A99181 /* BrainSpaceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrainSpaceTests.swift; sourceTree = "<group>"; };
-		0A974EB92B693D3000A99181 /* BrainSpaceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrainSpaceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0A974EBD2B693D3000A99181 /* BrainSpaceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrainSpaceUITests.swift; sourceTree = "<group>"; };
-		0A974EBF2B693D3000A99181 /* BrainSpaceUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrainSpaceUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3C13B2EEACFA1C531269A768 /* Pods-BrainSpaceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrainSpaceTests.release.xcconfig"; path = "Target Support Files/Pods-BrainSpaceTests/Pods-BrainSpaceTests.release.xcconfig"; sourceTree = "<group>"; };
+		493B904FF108E2094280CF52 /* Pods-BrainSpaceUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrainSpaceUITests.debug.xcconfig"; path = "Target Support Files/Pods-BrainSpaceUITests/Pods-BrainSpaceUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		506B039962FCE25C235E554F /* Pods-BrainSpace.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrainSpace.release.xcconfig"; path = "Target Support Files/Pods-BrainSpace/Pods-BrainSpace.release.xcconfig"; sourceTree = "<group>"; };
+		666A4FE34C541A526BF878D0 /* Pods-BrainSpaceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrainSpaceTests.debug.xcconfig"; path = "Target Support Files/Pods-BrainSpaceTests/Pods-BrainSpaceTests.debug.xcconfig"; sourceTree = "<group>"; };
+		740825E5A369D74F05FFBEBD /* Pods-BrainSpaceUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrainSpaceUITests.release.xcconfig"; path = "Target Support Files/Pods-BrainSpaceUITests/Pods-BrainSpaceUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7E7C9B15F3989F458605CC21 /* Pods_BrainSpace.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrainSpace.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B587B628F095E6D469200804 /* Pods-BrainSpace.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrainSpace.debug.xcconfig"; path = "Target Support Files/Pods-BrainSpace/Pods-BrainSpace.debug.xcconfig"; sourceTree = "<group>"; };
+		B8A2A0359BD500C934F2B5B7 /* Pods_BrainSpaceUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrainSpaceUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA1CB250AC3369136D18A6D5 /* Pods_BrainSpaceTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrainSpaceTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6F8D1685826BB8422596D61 /* Pods-BrainSpace-BrainSpaceUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrainSpace-BrainSpaceUITests.release.xcconfig"; path = "Target Support Files/Pods-BrainSpace-BrainSpaceUITests/Pods-BrainSpace-BrainSpaceUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D7F8FC7204958D70674C178E /* Pods-BrainSpace-BrainSpaceUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrainSpace-BrainSpaceUITests.debug.xcconfig"; path = "Target Support Files/Pods-BrainSpace-BrainSpaceUITests/Pods-BrainSpace-BrainSpaceUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,33 +91,122 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0A974EAC2B693D3000A99181 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0A974EB62B693D3000A99181 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				AA6D91C2F7DC51B7A6776A40 /* Pods_BrainSpace.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A6D3D382B6A50C50098A8EE /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				0A6D3D392B6A50C50098A8EE /* AppDelegate.swift */,
+				0A6D3D3A2B6A50C50098A8EE /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		0A6D3D752B6A516D0098A8EE /* BackendManager */ = {
+			isa = PBXGroup;
+			children = (
+				0A6D3D792B6A516D0098A8EE /* APIEndpoints.swift */,
+				0A6D3D7D2B6A516D0098A8EE /* APIRequestConvertible.swift */,
+				0A6D3D782B6A516D0098A8EE /* BackendConfiguration.swift */,
+				0A6D3D7C2B6A516D0098A8EE /* BackendManager.swift */,
+				0A6D3D772B6A516D0098A8EE /* CustomTypes.swift */,
+				0A6D3D762B6A516D0098A8EE /* EndPoints.swift */,
+				0A6D3D7A2B6A516D0098A8EE /* ServiceCall */,
+			);
+			path = BackendManager;
+			sourceTree = "<group>";
+		};
+		0A6D3D7A2B6A516D0098A8EE /* ServiceCall */ = {
+			isa = PBXGroup;
+			children = (
+				0A6D3D7B2B6A516D0098A8EE /* Service.swift */,
+			);
+			path = ServiceCall;
+			sourceTree = "<group>";
+		};
+		0A886AB72B6A53F9000843D2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0A886AB82B6A53F9000843D2 /* PostsResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0A886AC52B6A5CD0000843D2 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0A886AC62B6A5CD0000843D2 /* HomeView */,
+				0A886ACD2B6A5CD0000843D2 /* PostsViewController */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		0A886AC62B6A5CD0000843D2 /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				0A886AE92B6A7D34000843D2 /* PostsListTableCell */,
+				0A886AC72B6A5CD0000843D2 /* HomeInteractor.swift */,
+				0A886AC82B6A5CD0000843D2 /* HomeViewController.swift */,
+				0A886AC92B6A5CD0000843D2 /* HomeRouter.swift */,
+				0A886ACA2B6A5CD0000843D2 /* HomeWorker.swift */,
+				0A886ACB2B6A5CD0000843D2 /* HomeModels.swift */,
+				0A886ACC2B6A5CD0000843D2 /* HomePresenter.swift */,
+			);
+			path = HomeView;
+			sourceTree = "<group>";
+		};
+		0A886ACD2B6A5CD0000843D2 /* PostsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0A886AEE2B6A80E3000843D2 /* PostsCommentTableCell */,
+				0A886ACE2B6A5CD0000843D2 /* PostsInteractor.swift */,
+				0A886ACF2B6A5CD0000843D2 /* PostsModels.swift */,
+				0A886AD02B6A5CD0000843D2 /* PostsViewController.swift */,
+				0A886AD12B6A5CD0000843D2 /* PostsWorker.swift */,
+				0A886AD22B6A5CD0000843D2 /* PostsPresenter.swift */,
+				0A886AD32B6A5CD0000843D2 /* PostsRouter.swift */,
+			);
+			path = PostsViewController;
+			sourceTree = "<group>";
+		};
+		0A886AE22B6A785E000843D2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0A886AE32B6A7874000843D2 /* UIViewControllerExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0A886AE92B6A7D34000843D2 /* PostsListTableCell */ = {
+			isa = PBXGroup;
+			children = (
+				0A886AEA2B6A7D34000843D2 /* PostsListTableCell.xib */,
+				0A886AEB2B6A7D34000843D2 /* PostsListTableCell.swift */,
+			);
+			path = PostsListTableCell;
+			sourceTree = "<group>";
+		};
+		0A886AEE2B6A80E3000843D2 /* PostsCommentTableCell */ = {
+			isa = PBXGroup;
+			children = (
+				0A886AEF2B6A810F000843D2 /* PostsCommentTableCell.swift */,
+				0A886AF02B6A810F000843D2 /* PostsCommentTableCell.xib */,
+			);
+			path = PostsCommentTableCell;
+			sourceTree = "<group>";
+		};
 		0A974E902B693D2F00A99181 = {
 			isa = PBXGroup;
 			children = (
 				0A974E9B2B693D2F00A99181 /* BrainSpace */,
-				0A974EB22B693D3000A99181 /* BrainSpaceTests */,
-				0A974EBC2B693D3000A99181 /* BrainSpaceUITests */,
 				0A974E9A2B693D2F00A99181 /* Products */,
+				50368F2D9A2C4839361500AE /* Pods */,
+				E059AA1B02A567CB24484C6A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,8 +214,6 @@
 			isa = PBXGroup;
 			children = (
 				0A974E992B693D2F00A99181 /* BrainSpace.app */,
-				0A974EAF2B693D3000A99181 /* BrainSpaceTests.xctest */,
-				0A974EB92B693D3000A99181 /* BrainSpaceUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,32 +221,42 @@
 		0A974E9B2B693D2F00A99181 /* BrainSpace */ = {
 			isa = PBXGroup;
 			children = (
-				0A974E9C2B693D2F00A99181 /* AppDelegate.swift */,
-				0A974E9E2B693D2F00A99181 /* SceneDelegate.swift */,
-				0A974EA02B693D2F00A99181 /* ViewController.swift */,
-				0A974EA22B693D2F00A99181 /* Main.storyboard */,
+				0A886AE22B6A785E000843D2 /* Extensions */,
+				0A886AC52B6A5CD0000843D2 /* ViewController */,
+				0A6D3D382B6A50C50098A8EE /* Application */,
 				0A974EA52B693D3000A99181 /* Assets.xcassets */,
-				0A974EA72B693D3000A99181 /* LaunchScreen.storyboard */,
+				0A6D3D752B6A516D0098A8EE /* BackendManager */,
 				0A974EAA2B693D3000A99181 /* Info.plist */,
+				0A974EA72B693D3000A99181 /* LaunchScreen.storyboard */,
+				0A974EA22B693D2F00A99181 /* Main.storyboard */,
+				0A886AB72B6A53F9000843D2 /* Models */,
 			);
 			path = BrainSpace;
 			sourceTree = "<group>";
 		};
-		0A974EB22B693D3000A99181 /* BrainSpaceTests */ = {
+		50368F2D9A2C4839361500AE /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				0A974EB32B693D3000A99181 /* BrainSpaceTests.swift */,
+				B587B628F095E6D469200804 /* Pods-BrainSpace.debug.xcconfig */,
+				506B039962FCE25C235E554F /* Pods-BrainSpace.release.xcconfig */,
+				D7F8FC7204958D70674C178E /* Pods-BrainSpace-BrainSpaceUITests.debug.xcconfig */,
+				D6F8D1685826BB8422596D61 /* Pods-BrainSpace-BrainSpaceUITests.release.xcconfig */,
+				666A4FE34C541A526BF878D0 /* Pods-BrainSpaceTests.debug.xcconfig */,
+				3C13B2EEACFA1C531269A768 /* Pods-BrainSpaceTests.release.xcconfig */,
+				493B904FF108E2094280CF52 /* Pods-BrainSpaceUITests.debug.xcconfig */,
+				740825E5A369D74F05FFBEBD /* Pods-BrainSpaceUITests.release.xcconfig */,
 			);
-			path = BrainSpaceTests;
+			path = Pods;
 			sourceTree = "<group>";
 		};
-		0A974EBC2B693D3000A99181 /* BrainSpaceUITests */ = {
+		E059AA1B02A567CB24484C6A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0A974EBD2B693D3000A99181 /* BrainSpaceUITests.swift */,
-				0A974EBF2B693D3000A99181 /* BrainSpaceUITestsLaunchTests.swift */,
+				7E7C9B15F3989F458605CC21 /* Pods_BrainSpace.framework */,
+				CA1CB250AC3369136D18A6D5 /* Pods_BrainSpaceTests.framework */,
+				B8A2A0359BD500C934F2B5B7 /* Pods_BrainSpaceUITests.framework */,
 			);
-			path = BrainSpaceUITests;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,9 +266,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0A974EC32B693D3100A99181 /* Build configuration list for PBXNativeTarget "BrainSpace" */;
 			buildPhases = (
+				7BB792F437E49E68C049C925 /* [CP] Check Pods Manifest.lock */,
 				0A974E952B693D2F00A99181 /* Sources */,
 				0A974E962B693D2F00A99181 /* Frameworks */,
 				0A974E972B693D2F00A99181 /* Resources */,
+				0EA94413D8927C4D5999C77F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -147,42 +281,6 @@
 			productReference = 0A974E992B693D2F00A99181 /* BrainSpace.app */;
 			productType = "com.apple.product-type.application";
 		};
-		0A974EAE2B693D3000A99181 /* BrainSpaceTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0A974EC62B693D3100A99181 /* Build configuration list for PBXNativeTarget "BrainSpaceTests" */;
-			buildPhases = (
-				0A974EAB2B693D3000A99181 /* Sources */,
-				0A974EAC2B693D3000A99181 /* Frameworks */,
-				0A974EAD2B693D3000A99181 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				0A974EB12B693D3000A99181 /* PBXTargetDependency */,
-			);
-			name = BrainSpaceTests;
-			productName = BrainSpaceTests;
-			productReference = 0A974EAF2B693D3000A99181 /* BrainSpaceTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		0A974EB82B693D3000A99181 /* BrainSpaceUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0A974EC92B693D3100A99181 /* Build configuration list for PBXNativeTarget "BrainSpaceUITests" */;
-			buildPhases = (
-				0A974EB52B693D3000A99181 /* Sources */,
-				0A974EB62B693D3000A99181 /* Frameworks */,
-				0A974EB72B693D3000A99181 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				0A974EBB2B693D3000A99181 /* PBXTargetDependency */,
-			);
-			name = BrainSpaceUITests;
-			productName = BrainSpaceUITests;
-			productReference = 0A974EB92B693D3000A99181 /* BrainSpaceUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -192,17 +290,10 @@
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1500;
+				ORGANIZATIONNAME = "Kiran Sarvaiya";
 				TargetAttributes = {
 					0A974E982B693D2F00A99181 = {
 						CreatedOnToolsVersion = 15.0.1;
-					};
-					0A974EAE2B693D3000A99181 = {
-						CreatedOnToolsVersion = 15.0.1;
-						TestTargetID = 0A974E982B693D2F00A99181;
-					};
-					0A974EB82B693D3000A99181 = {
-						CreatedOnToolsVersion = 15.0.1;
-						TestTargetID = 0A974E982B693D2F00A99181;
 					};
 				};
 			};
@@ -220,8 +311,6 @@
 			projectRoot = "";
 			targets = (
 				0A974E982B693D2F00A99181 /* BrainSpace */,
-				0A974EAE2B693D3000A99181 /* BrainSpaceTests */,
-				0A974EB82B693D3000A99181 /* BrainSpaceUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -231,70 +320,92 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A886AEC2B6A7D34000843D2 /* PostsListTableCell.xib in Resources */,
 				0A974EA92B693D3000A99181 /* LaunchScreen.storyboard in Resources */,
 				0A974EA62B693D3000A99181 /* Assets.xcassets in Resources */,
 				0A974EA42B693D2F00A99181 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0A974EAD2B693D3000A99181 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0A974EB72B693D3000A99181 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				0A886AF22B6A810F000843D2 /* PostsCommentTableCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0EA94413D8927C4D5999C77F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BrainSpace/Pods-BrainSpace-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BrainSpace/Pods-BrainSpace-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BrainSpace/Pods-BrainSpace-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7BB792F437E49E68C049C925 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BrainSpace-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0A974E952B693D2F00A99181 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A974EA12B693D2F00A99181 /* ViewController.swift in Sources */,
-				0A974E9D2B693D2F00A99181 /* AppDelegate.swift in Sources */,
-				0A974E9F2B693D2F00A99181 /* SceneDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0A974EAB2B693D3000A99181 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0A974EB42B693D3000A99181 /* BrainSpaceTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0A974EB52B693D3000A99181 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0A974EC02B693D3100A99181 /* BrainSpaceUITestsLaunchTests.swift in Sources */,
-				0A974EBE2B693D3000A99181 /* BrainSpaceUITests.swift in Sources */,
+				0A886AED2B6A7D34000843D2 /* PostsListTableCell.swift in Sources */,
+				0A886ADF2B6A5CD0000843D2 /* PostsRouter.swift in Sources */,
+				0A6D3D8C2B6A516D0098A8EE /* BackendManager.swift in Sources */,
+				0A886AD82B6A5CD0000843D2 /* HomeModels.swift in Sources */,
+				0A886AD42B6A5CD0000843D2 /* HomeInteractor.swift in Sources */,
+				0A6D3D8B2B6A516D0098A8EE /* Service.swift in Sources */,
+				0A886ADE2B6A5CD0000843D2 /* PostsPresenter.swift in Sources */,
+				0A886AF12B6A810F000843D2 /* PostsCommentTableCell.swift in Sources */,
+				0A6D3D872B6A516D0098A8EE /* EndPoints.swift in Sources */,
+				0A6D3D892B6A516D0098A8EE /* BackendConfiguration.swift in Sources */,
+				0A886ADC2B6A5CD0000843D2 /* PostsViewController.swift in Sources */,
+				0A6D3D8A2B6A516D0098A8EE /* APIEndpoints.swift in Sources */,
+				0A886AD62B6A5CD0000843D2 /* HomeRouter.swift in Sources */,
+				0A886AB92B6A53F9000843D2 /* PostsResponse.swift in Sources */,
+				0A886ADA2B6A5CD0000843D2 /* PostsInteractor.swift in Sources */,
+				0A886AD72B6A5CD0000843D2 /* HomeWorker.swift in Sources */,
+				0A6D3D5B2B6A50C50098A8EE /* AppDelegate.swift in Sources */,
+				0A6D3D882B6A516D0098A8EE /* CustomTypes.swift in Sources */,
+				0A886AE42B6A7874000843D2 /* UIViewControllerExtensions.swift in Sources */,
+				0A6D3D8D2B6A516D0098A8EE /* APIRequestConvertible.swift in Sources */,
+				0A6D3D5C2B6A50C50098A8EE /* SceneDelegate.swift in Sources */,
+				0A886AD52B6A5CD0000843D2 /* HomeViewController.swift in Sources */,
+				0A886AD92B6A5CD0000843D2 /* HomePresenter.swift in Sources */,
+				0A886ADB2B6A5CD0000843D2 /* PostsModels.swift in Sources */,
+				0A886ADD2B6A5CD0000843D2 /* PostsWorker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		0A974EB12B693D3000A99181 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 0A974E982B693D2F00A99181 /* BrainSpace */;
-			targetProxy = 0A974EB02B693D3000A99181 /* PBXContainerItemProxy */;
-		};
-		0A974EBB2B693D3000A99181 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 0A974E982B693D2F00A99181 /* BrainSpace */;
-			targetProxy = 0A974EBA2B693D3000A99181 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		0A974EA22B693D2F00A99181 /* Main.storyboard */ = {
@@ -437,16 +548,20 @@
 		};
 		0A974EC42B693D3100A99181 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B587B628F095E6D469200804 /* Pods-BrainSpace.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Y2NHSN9PJ8;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BrainSpace/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BrainSpace;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.travel";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -465,16 +580,20 @@
 		};
 		0A974EC52B693D3100A99181 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 506B039962FCE25C235E554F /* Pods-BrainSpace.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Y2NHSN9PJ8;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BrainSpace/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BrainSpace;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.travel";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -488,82 +607,6 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		0A974EC72B693D3100A99181 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Y2NHSN9PJ8;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.test.BrainSpaceTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BrainSpace.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BrainSpace";
-			};
-			name = Debug;
-		};
-		0A974EC82B693D3100A99181 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Y2NHSN9PJ8;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.test.BrainSpaceTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BrainSpace.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BrainSpace";
-			};
-			name = Release;
-		};
-		0A974ECA2B693D3100A99181 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Y2NHSN9PJ8;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.test.BrainSpaceUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = BrainSpace;
-			};
-			name = Debug;
-		};
-		0A974ECB2B693D3100A99181 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Y2NHSN9PJ8;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.test.BrainSpaceUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = BrainSpace;
 			};
 			name = Release;
 		};
@@ -584,24 +627,6 @@
 			buildConfigurations = (
 				0A974EC42B693D3100A99181 /* Debug */,
 				0A974EC52B693D3100A99181 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		0A974EC62B693D3100A99181 /* Build configuration list for PBXNativeTarget "BrainSpaceTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0A974EC72B693D3100A99181 /* Debug */,
-				0A974EC82B693D3100A99181 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		0A974EC92B693D3100A99181 /* Build configuration list for PBXNativeTarget "BrainSpaceUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0A974ECA2B693D3100A99181 /* Debug */,
-				0A974ECB2B693D3100A99181 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
